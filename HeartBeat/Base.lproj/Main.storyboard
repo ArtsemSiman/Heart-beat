@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HeartBeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="xdj-Nk-dqr">
+                                <rect key="frame" x="106" y="347" width="202" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xdj-Nk-dqr" secondAttribute="height" multiplier="1:1" id="DvR-eH-NIB"/>
+                                </constraints>
+                            </imageView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="xb1-4x-faH">
+                                <rect key="frame" x="160" y="600" width="94" height="32"/>
+                                <connections>
+                                    <action selector="numberOfBeatsAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="UCh-cS-AZq"/>
+                                </connections>
+                            </stepper>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" Кол-во ударов:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDO-L1-M3G">
+                                <rect key="frame" x="117" y="640" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="vH4-id-y43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRj-qd-Q4M">
+                                <rect key="frame" x="167.5" y="694" width="79.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="X8x-cc-QZR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start 🩸">
+                                    <color key="baseForegroundColor" red="0.85049484715317236" green="0.0" blue="0.031833208005437909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.49195140245588698" blue="0.49793426410954866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DDO-L1-M3G" firstAttribute="centerX" secondItem="xb1-4x-faH" secondAttribute="centerX" id="2cq-wa-ohp"/>
+                            <constraint firstItem="xdj-Nk-dqr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6T6-0t-KOy"/>
+                            <constraint firstItem="RRj-qd-Q4M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7n-y3-iP8"/>
+                            <constraint firstItem="DDO-L1-M3G" firstAttribute="top" secondItem="xb1-4x-faH" secondAttribute="bottom" constant="8" symbolic="YES" id="ETv-kZ-kMe"/>
+                            <constraint firstItem="RRj-qd-Q4M" firstAttribute="top" secondItem="DDO-L1-M3G" secondAttribute="bottom" constant="20" id="Gpf-4N-bn4"/>
+                            <constraint firstItem="xb1-4x-faH" firstAttribute="top" secondItem="xdj-Nk-dqr" secondAttribute="bottom" constant="51" id="LDQ-Ja-zwP"/>
+                            <constraint firstItem="xdj-Nk-dqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="bBX-LR-dYJ"/>
+                            <constraint firstItem="xdj-Nk-dqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXf-VN-Mf3"/>
+                            <constraint firstItem="xb1-4x-faH" firstAttribute="centerX" secondItem="xdj-Nk-dqr" secondAttribute="centerX" id="eiJ-GT-igk"/>
+                            <constraint firstItem="RRj-qd-Q4M" firstAttribute="centerX" secondItem="DDO-L1-M3G" secondAttribute="centerX" id="gqu-Wf-ynb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beatsString" destination="DDO-L1-M3G" id="k6j-bl-eRk"/>
+                        <outlet property="heart" destination="xdj-Nk-dqr" id="3Sq-cC-gTq"/>
+                        <outlet property="heartHeight" destination="DvR-eH-NIB" id="2Zn-P0-Yad"/>
+                        <outlet property="numberOfBeats" destination="xb1-4x-faH" id="bwx-op-DXA"/>
+                        <outlet property="start" destination="RRj-qd-Q4M" id="Ke4-t5-RPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="4096" height="4096"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
