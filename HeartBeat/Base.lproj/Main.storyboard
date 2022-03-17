@@ -22,45 +22,56 @@
                                     <constraint firstAttribute="width" secondItem="xdj-Nk-dqr" secondAttribute="height" multiplier="1:1" id="DvR-eH-NIB"/>
                                 </constraints>
                             </imageView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="xb1-4x-faH">
-                                <rect key="frame" x="160" y="600" width="94" height="32"/>
-                                <connections>
-                                    <action selector="numberOfBeatsAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="UCh-cS-AZq"/>
-                                </connections>
-                            </stepper>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" Кол-во ударов:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDO-L1-M3G">
-                                <rect key="frame" x="117" y="640" width="180" height="34"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="599-pV-ddq">
+                                <rect key="frame" x="20" y="757" width="374" height="85"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="xb1-4x-faH">
+                                        <rect key="frame" x="280" y="0.0" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="numberOfBeatsAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="UCh-cS-AZq"/>
+                                        </connections>
+                                    </stepper>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" Кол-во ударов:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDO-L1-M3G">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="29T-Vs-WBV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRj-qd-Q4M">
+                                        <rect key="frame" x="147.5" y="54" width="79.5" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="X8x-cc-QZR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start 🩸">
+                                            <color key="baseForegroundColor" red="0.85049484715317236" green="0.0" blue="0.031833208005437909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.49195140245588698" blue="0.49793426410954866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="vH4-id-y43"/>
+                                    <constraint firstAttribute="bottom" secondItem="RRj-qd-Q4M" secondAttribute="bottom" id="B7R-Ha-czL"/>
+                                    <constraint firstItem="RRj-qd-Q4M" firstAttribute="top" secondItem="DDO-L1-M3G" secondAttribute="bottom" constant="20" id="FET-4K-c9L"/>
+                                    <constraint firstItem="RRj-qd-Q4M" firstAttribute="centerX" secondItem="599-pV-ddq" secondAttribute="centerX" id="Mdm-pC-YX9"/>
+                                    <constraint firstAttribute="trailing" secondItem="xb1-4x-faH" secondAttribute="trailing" id="YMh-BD-nqa"/>
+                                    <constraint firstItem="DDO-L1-M3G" firstAttribute="leading" secondItem="599-pV-ddq" secondAttribute="leading" id="doJ-A7-V3a"/>
+                                    <constraint firstItem="xb1-4x-faH" firstAttribute="top" secondItem="599-pV-ddq" secondAttribute="top" id="gfq-bX-H1m"/>
+                                    <constraint firstItem="DDO-L1-M3G" firstAttribute="top" secondItem="599-pV-ddq" secondAttribute="top" id="uCe-HL-Mg6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRj-qd-Q4M">
-                                <rect key="frame" x="167.5" y="694" width="79.5" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="X8x-cc-QZR"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start 🩸">
-                                    <color key="baseForegroundColor" red="0.85049484715317236" green="0.0" blue="0.031833208005437909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="baseBackgroundColor" red="1" green="0.49195140245588698" blue="0.49793426410954866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                            </button>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DDO-L1-M3G" firstAttribute="centerX" secondItem="xb1-4x-faH" secondAttribute="centerX" id="2cq-wa-ohp"/>
                             <constraint firstItem="xdj-Nk-dqr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6T6-0t-KOy"/>
-                            <constraint firstItem="RRj-qd-Q4M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7n-y3-iP8"/>
-                            <constraint firstItem="DDO-L1-M3G" firstAttribute="top" secondItem="xb1-4x-faH" secondAttribute="bottom" constant="8" symbolic="YES" id="ETv-kZ-kMe"/>
-                            <constraint firstItem="RRj-qd-Q4M" firstAttribute="top" secondItem="DDO-L1-M3G" secondAttribute="bottom" constant="20" id="Gpf-4N-bn4"/>
-                            <constraint firstItem="xb1-4x-faH" firstAttribute="top" secondItem="xdj-Nk-dqr" secondAttribute="bottom" constant="51" id="LDQ-Ja-zwP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="599-pV-ddq" secondAttribute="bottom" constant="20" id="Z54-M4-Uxf"/>
                             <constraint firstItem="xdj-Nk-dqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="bBX-LR-dYJ"/>
                             <constraint firstItem="xdj-Nk-dqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXf-VN-Mf3"/>
-                            <constraint firstItem="xb1-4x-faH" firstAttribute="centerX" secondItem="xdj-Nk-dqr" secondAttribute="centerX" id="eiJ-GT-igk"/>
-                            <constraint firstItem="RRj-qd-Q4M" firstAttribute="centerX" secondItem="DDO-L1-M3G" secondAttribute="centerX" id="gqu-Wf-ynb"/>
+                            <constraint firstItem="599-pV-ddq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gaq-D2-eA9"/>
+                            <constraint firstItem="599-pV-ddq" firstAttribute="centerX" secondItem="xdj-Nk-dqr" secondAttribute="centerX" id="tpy-aN-ES9"/>
                         </constraints>
                     </view>
                     <connections>

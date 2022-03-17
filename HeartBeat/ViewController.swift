@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     
     @objc
     private func heartBeats() {
+        guard Int(self.numberOfBeats.value) > 0 else {return}
         UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseOut, .allowUserInteraction], animations: {
             self.heartHeight.constant += 30
             self.view.layoutIfNeeded()
