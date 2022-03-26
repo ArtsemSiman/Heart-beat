@@ -13,6 +13,9 @@
 		42928C1D27E06CED000960D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42928C1B27E06CED000960D0 /* Main.storyboard */; };
 		42928C1F27E06CF1000960D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42928C1E27E06CF1000960D0 /* Assets.xcassets */; };
 		42928C2227E06CF1000960D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42928C2027E06CF1000960D0 /* LaunchScreen.storyboard */; };
+		42928C5727EC785E000960D0 /* Stoicheion.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42928C5627EC785E000960D0 /* Stoicheion.ttf */; };
+		42928C5927EC7A2C000960D0 /* CoolIce.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42928C5827EC7A2C000960D0 /* CoolIce.otf */; };
+		42928C5A27EE25CA000960D0 /* CimeroPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42928C5427EC7127000960D0 /* CimeroPro.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		42928C1E27E06CF1000960D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42928C2127E06CF1000960D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42928C2327E06CF1000960D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42928C5427EC7127000960D0 /* CimeroPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CimeroPro.otf; sourceTree = "<group>"; };
+		42928C5627EC785E000960D0 /* Stoicheion.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stoicheion.ttf; sourceTree = "<group>"; };
+		42928C5827EC7A2C000960D0 /* CoolIce.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolIce.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		42928C1427E06CED000960D0 /* HeartBeat */ = {
 			isa = PBXGroup;
 			children = (
+				42928C5127EC6DE5000960D0 /* MyFont */,
 				42928C1527E06CED000960D0 /* AppDelegate.swift */,
 				42928C1727E06CED000960D0 /* SceneDelegate.swift */,
 				42928C1927E06CED000960D0 /* ViewController.swift */,
@@ -63,8 +70,18 @@
 				42928C1E27E06CF1000960D0 /* Assets.xcassets */,
 				42928C2027E06CF1000960D0 /* LaunchScreen.storyboard */,
 				42928C2327E06CF1000960D0 /* Info.plist */,
+				42928C5627EC785E000960D0 /* Stoicheion.ttf */,
+				42928C5427EC7127000960D0 /* CimeroPro.otf */,
 			);
 			path = HeartBeat;
+			sourceTree = "<group>";
+		};
+		42928C5127EC6DE5000960D0 /* MyFont */ = {
+			isa = PBXGroup;
+			children = (
+				42928C5827EC7A2C000960D0 /* CoolIce.otf */,
+			);
+			path = MyFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				42928C2227E06CF1000960D0 /* LaunchScreen.storyboard in Resources */,
+				42928C5927EC7A2C000960D0 /* CoolIce.otf in Resources */,
+				42928C5A27EE25CA000960D0 /* CimeroPro.otf in Resources */,
 				42928C1F27E06CF1000960D0 /* Assets.xcassets in Resources */,
+				42928C5727EC785E000960D0 /* Stoicheion.ttf in Resources */,
 				42928C1D27E06CED000960D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
